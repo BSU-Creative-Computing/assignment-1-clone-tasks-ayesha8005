@@ -1,0 +1,186 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Default styles for larger screens */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.logo img{
+    /* Maintain the size of the logo */
+    margin: 10px;
+    padding: 10px;
+    width: 5%;
+}
+
+.image-stack {
+    /* Styles for the image stack, as mentioned in the previous response */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.image-stack img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    gap: 0;
+    
+}
+
+
+footer {
+    background-color: rgb(21, 24, 29);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+div{
+    text-align: left;
+}
+
+.text{
+    font-size: 16px;
+    padding: 20px;
+    max-width: 100%;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 100;
+    line-height: 155%;
+    letter-spacing: 80%;
+}
+
+/* Media query for screens with a maximum width of 480 pixels (typical for mobile devices) */
+@media screen and (max-width: 480px) {
+    /* Stack images vertically */
+
+    .container{
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .image-stack {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        margin: 0px;
+    }
+
+    .image-stack img{
+        margin: 0;
+        display: block;
+        align-items: center;
+        max-width: none;
+        width: 100%;
+    }
+
+    .logo img {
+        /* Maintain the size of the logo */
+        width: 10%;
+        height: auto;
+        max-width: none;
+        margin: 0px;
+    }
+
+    div{
+        text-align: left;
+    }
+
+    .text{
+        font-size: 2vw;
+        padding: 10px;
+    }
+
+    footer{
+        font-size: 2vw;
+        padding: 10px;
+        width: auto;
+    }
+}
+
+/* Media query for screens with a minumum width of 481 pixels upto maximum width of 800px */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    /* Stack images vertically */
+
+    .image-stack {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        margin: 0px;
+    }
+
+    .image-stack img{
+        gap: 0;
+        margin: 0;
+        display: block;
+        align-items: normal;
+    }
+
+    .logo img {
+        /* Maintain the size of the logo */
+        width: 5%;
+        height: auto;
+        max-width: none;
+        margin: 0px;
+    }
+
+    .text{
+        font-size: 1.5vw;
+        padding: 10px;
+    }
+
+    footer{
+        font-size: 1.5vw;
+        padding: 10px;
+    }
+}
+
+/* Media query for screens with a minumum width of 801 pixels upto maximum width of 1024px and above */
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+    /* Stack images vertically */
+
+    .image-stack {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        margin: 0px;
+    }
+
+    .image-stack img{
+        gap: 0;
+        margin: 0;
+        display: block;
+        align-items: normal;
+        max-width: 100%;
+    }
+
+    .logo img {
+        /* Maintain the size of the logo */
+        width: 5%;
+        height: auto;
+        max-width: none;
+        margin: 0px;
+    }
+
+    .text{
+        font-size: 1vw;
+        padding: 10px;
+    }
+
+    footer{
+        font-size: 1vw;
+        padding: 10px;
+    }
+}
+
