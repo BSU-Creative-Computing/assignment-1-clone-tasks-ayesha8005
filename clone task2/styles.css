@@ -138,7 +138,7 @@ li a{
 
 .item-2{
     background-image: url(lone-gunmen.jpg);
-    width: 170px;
+    width: 220px;
     height: 270px;
     background-size: cover;
     margin: 10px;
@@ -147,7 +147,7 @@ li a{
 
 .item-3{
     background-image: url(predators.jpg);
-    width: 170px;
+    width: 220px;
     height: 270px;
     background-size: cover;
     margin: 10px;
@@ -156,7 +156,7 @@ li a{
 .item-4{
     background-image: url(millenium.jpg);
     background-size: cover;
-    width: 170px;
+    width: 220px;
     height: 270px;
     margin: 10px;
 }
@@ -164,7 +164,7 @@ li a{
 
 .item-5{
     background-image: url(rage.jpg);
-    width: 170px;
+    width: 220px;
     height: 270px;
     margin: 10px;
     background-size: cover;
@@ -380,7 +380,7 @@ li a{
 
     .navbar{
         width: 100%;
-        width: 90%;
+        height: 100%;
     }
 
     .left{
