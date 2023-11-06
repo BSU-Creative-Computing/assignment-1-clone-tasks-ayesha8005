@@ -1,0 +1,201 @@
+$headerbg:#9bcdf3;
+$background-color:skyblue;
+
+@mixin heading{
+
+  
+  padding: 40px;
+  width: auto;
+  margin-top: -20px;
+    
+}
+
+
+body{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 239, 241);
+   
+}
+
+footer{
+  @include heading;
+  height: 50px;
+  background-color: #8ccff7
+}
+header{
+  @include heading;  
+  background-color: #8ccff7;
+}
+
+picture{
+
+  margin-left: 30%;
+
+}
+
+
+.container{
+  background-color: $background-color;
+}
+
+
+$smallest: #4e89ae;
+$smaller: #43658b;
+$medium: #ed6663;
+$biggest: #ffa372;
+
+section{
+  display: flex;
+}
+
+.container{
+  margin-top: 5%; 
+    
+}
+
+.container div{
+  height: 35px;
+  &:hover{
+    background-color: #444;
+  }
+}
+.medium{
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $medium;
+  cursor: pointer;
+  font-size: 1em;
+   
+}
+
+.smaller{
+  @extend .medium;
+  height: 20px;
+  background-color: $smaller;
+  font-size: 0.9em;
+}
+
+.smallest{
+  @extend .medium;
+  height: 20px;
+  background-color: $smallest;
+  font-size: 0.8em;
+}
+
+
+
+.biggest{
+  @extend .medium;
+  height: 20px;
+  background-color: $biggest;
+  font-size: 1.2em;
+}
+
+
+.circles div {
+  width: 1250%;
+  height: 1250%;
+  background-color: #4e89ae;
+  border-radius: 50%;
+   
+   
+  &:hover {
+    background-color: #444;
+  }
+}
+
+
+.circles {
+  border-radius: 50%;
+  margin: 40px;
+  
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  .circle1 {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    background-color: $smallest;
+  }
+
+  .circle2 {
+    width: 80px;
+    height: 80px;
+    margin-top: 8px;
+    background-color: $smaller;
+  }
+
+  .circle3 {
+    width: 90px;
+    height: 90px;
+    margin-top: 9px;
+    background-color: $medium;
+  }
+
+  .circle4 {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    background-color: $biggest;
+  }
+
+    :hover {
+      background-color: #444;
+    }
+}
+
+
+
+// Define a mixin to handle media queries for different images
+@mixin image-at-breakpoint($image-path, $breakpoint) {
+
+  @if $breakpoint == small {
+    @media (max-width: 480px) {
+      background-image: url('https://via.placeholder.com/200');
+    }
+  }
+
+  @else if $breakpoint == medium {
+    @media (min-width: 481px) and (max-width: 800px) {
+      background-image: url('https://via.placeholder.com/300');
+      
+    }
+  
+  }
+
+  @else if $breakpoint == large {
+    @media (min-width: 801px) {
+      background-image: url('https://via.placeholder.com/400');
+    }
+  }
+   
+}
+
+@mixin breakpoint($maxwidth) {
+  @media screen and (max-width: $maxwidth){
+    @content;
+  }
+}
+
+.circles{
+  @include breakpoint(621px){
+    display: grid;
+  }
+}
+
+.my-element {
+  background-color: red;
+  
+  @include image-at-breakpoint('https://via.placeholder.com/200', small);
+  
+  @include image-at-breakpoint('https://via.placeholder.com/300', medium);
+  
+  @include image-at-breakpoint('https://via.placeholder.com/400', large);
+}
+  

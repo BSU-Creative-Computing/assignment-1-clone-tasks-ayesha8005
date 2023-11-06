@@ -1,0 +1,141 @@
+body {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(228, 239, 241);
+}
+
+footer {
+  padding: 40px;
+  width: auto;
+  margin-top: -20px;
+  height: 50px;
+  background-color: #8ccff7;
+}
+
+header {
+  padding: 40px;
+  width: auto;
+  margin-top: -20px;
+  background-color: #8ccff7;
+}
+
+picture {
+  margin-left: 30%;
+}
+
+.container {
+  background-color: skyblue;
+}
+
+section {
+  display: flex;
+}
+
+.container {
+  margin-top: 5%;
+}
+
+.container div {
+  height: 35px;
+}
+.container div:hover {
+  background-color: #444;
+}
+
+.medium, .biggest, .smallest, .smaller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ed6663;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.smaller {
+  height: 20px;
+  background-color: #43658b;
+  font-size: 0.9em;
+}
+
+.smallest {
+  height: 20px;
+  background-color: #4e89ae;
+  font-size: 0.8em;
+}
+
+.biggest {
+  height: 20px;
+  background-color: #ffa372;
+  font-size: 1.2em;
+}
+
+.circles div {
+  width: 1250%;
+  height: 1250%;
+  background-color: #4e89ae;
+  border-radius: 50%;
+}
+.circles div:hover {
+  background-color: #444;
+}
+
+.circles {
+  border-radius: 50%;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.circles .circle1 {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+  background-color: #4e89ae;
+}
+.circles .circle2 {
+  width: 80px;
+  height: 80px;
+  margin-top: 8px;
+  background-color: #43658b;
+}
+.circles .circle3 {
+  width: 90px;
+  height: 90px;
+  margin-top: 9px;
+  background-color: #ed6663;
+}
+.circles .circle4 {
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+  background-color: #ffa372;
+}
+.circles :hover {
+  background-color: #444;
+}
+
+@media screen and (max-width: 621px) {
+  .circles {
+    display: grid;
+  }
+}
+
+.my-element {
+  background-color: red;
+}
+@media (max-width: 480px) {
+  .my-element {
+    background-image: url("https://via.placeholder.com/200");
+  }
+}
+@media (min-width: 481px) and (max-width: 800px) {
+  .my-element {
+    background-image: url("https://via.placeholder.com/300");
+  }
+}
+@media (min-width: 801px) {
+  .my-element {
+    background-image: url("https://via.placeholder.com/400");
+  }
+}/*# sourceMappingURL=cl3.css.map */
