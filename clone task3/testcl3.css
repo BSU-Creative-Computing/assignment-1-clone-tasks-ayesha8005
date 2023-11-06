@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.header, .footer {
+  background-color: #8ccff7;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .circle {
+  border-radius: 50%;
+  margin: 10px;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+.container .circle.circle-70 {
+  width: 70px;
+  height: 70px;
+}
+.container .circle.circle-80 {
+  width: 80px;
+  height: 80px;
+}
+.container .circle.circle-90 {
+  width: 90px;
+  height: 90px;
+}
+.container .circle.circle-100 {
+  width: 100px;
+  height: 100px;
+}
+.container .circle:hover {
+  background-color: #444;
+}
+
+.row {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 18px;
+}
+.row:hover {
+  background-color: #444;
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .container .circle {
+    display: block;
+    margin: 10px auto;
+  }
+}/*# sourceMappingURL=testcl3.css.map */
