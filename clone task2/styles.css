@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body{
+    font-family: 'Cairo', sans-serif;
+    margin: 0px;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: rgb(69, 142, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Style for the "What's On" heading */
+.brand {
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+}
+
+/* Style for the navigation links */
+.nav-links {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+/* Style for the search bar */
+.search-bar {
+    width: 270px;
+    height: 30px;
+    border-radius: 0px;
+    border-color: rgb(152, 152, 152);
+    border-width: 1px;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 160px;
+    margin-top: 10px; 
+    flex-wrap: nowrap;
+}
+
+.right p{
+    font-size: 12px;
+    text-align: left;
+}
+
+.right div{
+    margin: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 0px;
+    
+}
+
+.left{
+    font-size: 15px;
+    background-color: white;
+}
+
+.left, .item-small, .item{
+    box-shadow: 4px 4px 5px 2px rgb(194, 195, 195);
+    margin: 5px;
+}
+
+
+.left p, h2, a{
+    margin: 15px;
+}
+
+.row {
+    display: flex;
+    height: 60%;
+}
+
+
+
+.item {
+    background-color: white;
+   
+}
+
+.item-small{
+    background-color: white;
+   
+}
+.item-small h2{
+    margin: 8px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-small p{
+    margin: 8px;
+}
+
+.item h2{
+    margin: 8px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item p{
+    margin: 8px;
+}
+
+
+
+
+
+.item-large{
+    background-image: url(avengers.jpg);
+    width: 700px;
+    height: 600px;
+    background-size: cover;
+}
+
+.item-2{
+    background-image: url(lone-gunmen.jpg);
+    width: 170px;
+    height: 270px;
+    background-size: cover;
+    margin: 10px;
+    
+}
+
+.item-3{
+    background-image: url(predators.jpg);
+    width: 170px;
+    height: 270px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.item-4{
+    background-image: url(millenium.jpg);
+    background-size: cover;
+    width: 170px;
+    height: 270px;
+    margin: 10px;
+}
+
+
+.item-5{
+    background-image: url(rage.jpg);
+    width: 170px;
+    height: 270px;
+    margin: 10px;
+    background-size: cover;
+}
+
+.buttn{
+    background-color: rgb(72, 150, 247);
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    margin-left: 49%;
+}
+
+.buttnn{
+    background-color: rgb(72, 150, 247);
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    margin-left: 86%;
+}
+
+@media screen and (max-width:480px){
+
+   
+    .search-bar {
+        width: 70px;
+        height: 30px;
+        border-radius: 0px;
+        border-color: rgb(152, 152, 152);
+        border-width: 1px;
+        padding: 5px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+        
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 20%;
+        position: relative;
+        top: 25%;
+        left: 50%;
+        margin: 20%;
+        transform: translate(-50%, -50%);
+        width: 50%; /* You can set this to any width */
+        height: 50%; /* You can set this to any height */
+    }
+
+    
+
+    .left, .item-large{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position:relative;
+        top: 40%;
+        left: 50%;
+        margin: 20%;
+        transform: translate(-50%, -50%);
+        width: 100%; /* You can set this to any width */
+        height: 100%; /* You can set this to any height*/
+      
+    }
+
+    .left div{
+        
+        margin-bottom: 0px;
+        margin: 0px;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .left{
+        margin-top: 100px;
+        height: 90%;
+        
+    }
+
+    .row div{
+        justify-content: center;
+        padding-bottom: 99px;
+     
+    }
+
+    .row{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .item-large{
+        width: 300px;
+        height: 290px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        
+    }
+
+    .buttnn{
+        margin-left: 200px;
+        padding-left: 4px;
+        padding-right: 7px;
+        width: 20%;
+        text-align: center;
+    }
+
+    .item-small{
+        width: 250px;
+        height: 450px;
+
+    }
+
+
+    .item{
+        width: 250px;
+        height: 450px;
+        
+    }
+    
+}
+
+/* Add a media query for screens 800px or less */
+@media screen and (min-width:481px) and (max-width: 800px) {
+
+    .item-large{
+        width: 480px;
+        height: 400px;
+
+    }
+
+    .buttnn{
+        margin-left: 9px;
+        margin-bottom: -10px;
+        
+    }
+
+    .buttnn{
+        margin-left: 79%;
+        margin-bottom: 100px;
+    }
+    
+
+    .left{
+        width: 480px;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    
+    }
+    .container {
+        flex-direction: column; 
+        margin: 10px;
+    }
+
+    .item-small, .item{
+        height: 520px;
+        width: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        
+    }
+
+    .row{
+    
+        padding-bottom: 30px;
+    }
+
+    .item{
+        position:relative;
+        top: -28%;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (min-width:801px) and (max-width: 1024px){
+
+    .container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .left{
+        margin: 7px;
+        height: 55%;
+    }
+
+    .row{
+        display: grid;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+
+    .left{
+        height: 890px;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+
+    .container{
+        width: 100%;
+        justify-content: center;
+     
+    }
+
+}
