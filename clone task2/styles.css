@@ -321,6 +321,13 @@ li a{
         margin-left: 79%;
         margin-bottom: 100px;
     }
+
+    .buttn{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+    
+    }
     
 
     .left{
