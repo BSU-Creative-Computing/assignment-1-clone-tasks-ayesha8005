@@ -21,7 +21,7 @@ body {
 }
 
 .image-stack {
-    /* Styles for the image stack, as mentioned in the previous response */
+    /* Styles for the image stack */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0px;
