@@ -1,16 +1,14 @@
 $headerbg:#9bcdf3;
 $background-color:skyblue;
-
+//mixin for heading
 @mixin heading{
-
-  
   padding: 40px;
   width: auto;
   margin-top: -20px;
-    
+  
 }
 
-
+//body alignment
 body{
   display: inline;
   justify-content: center;
@@ -19,6 +17,7 @@ body{
    
 }
 
+//heading and footer usigng include for mixin
 footer{
   @include heading;
   height: 50px;
@@ -40,7 +39,7 @@ picture{
   background-color: $background-color;
 }
 
-
+//color variables
 $smallest: #4e89ae;
 $smaller: #43658b;
 $medium: #ed6663;
@@ -152,7 +151,7 @@ section{
 
 
 
-// Define a mixin to handle media queries for different images
+// mixin for media queries
 @mixin image-at-breakpoint($image-path, $breakpoint) {
 
   @if $breakpoint == small {
@@ -177,6 +176,7 @@ section{
    
 }
 
+//Further mixins for media queries and images
 @mixin breakpoint($maxwidth) {
   @media screen and (max-width: $maxwidth){
     @content;
