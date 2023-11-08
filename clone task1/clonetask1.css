@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
 }
 
-/* Default styles for larger screens */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -14,14 +14,14 @@ body {
 }
 
 .logo img{
-    /* Maintain the size of the logo */
+    /* maintaining the size of the logo */
     margin: 10px;
     padding: 10px;
     width: 5%;
 }
 
 .image-stack {
-    /* Styles for the image stack */
+    /* styles for the image stack */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0px;
@@ -86,7 +86,7 @@ div{
     }
 
     .logo img {
-        /* Maintain the size of the logo */
+        
         width: 10%;
         height: auto;
         max-width: none;
@@ -111,7 +111,7 @@ div{
 
 /* Media query for screens with a minumum width of 481 pixels upto maximum width of 800px */
 @media screen and (min-width: 481px) and (max-width: 800px) {
-    /* Stack images vertically */
+    
 
     .image-stack {
         display: grid;
@@ -148,7 +148,7 @@ div{
 
 /* Media query for screens with a minumum width of 801 pixels upto maximum width of 1024px and above */
 @media screen and (min-width: 801px) and (max-width: 1024px) {
-    /* Stack images vertically */
+    
 
     .image-stack {
         display: grid;
@@ -166,7 +166,7 @@ div{
     }
 
     .logo img {
-        /* Maintain the size of the logo */
+        
         width: 5%;
         height: auto;
         max-width: none;
